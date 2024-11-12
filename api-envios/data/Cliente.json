@@ -1,0 +1,93 @@
+[
+  {
+    "ciudad": "Manizales",
+    "direccion": "Edificio del parque, piso 2, Ucaldas",
+    "id": "C0001",
+    "telefono": "3115551234",
+    "nombre": "Carlos Cuesta Iglesias"
+  },
+  {
+    "ciudad": "Bogotá",
+    "direccion": "Laboratorio de física cuántica, LFCB",
+    "id": "0A7FQ",
+    "telefono": "3115551010",
+    "nombre": "David Bohm"
+  },
+  {
+    "ciudad": "Manizales",
+    "direccion": "Mercaldas La Sultana",
+    "id": "0F7SD",
+    "telefono": "3115550002",
+    "nombre": "David Andrés García"
+  },
+  {
+    "ciudad": "Pereira",
+    "direccion": "Calle 50 #12B-35, Barrio La Francia",
+    "id": "C0002",
+    "telefono": "3126789012",
+    "nombre": "Ana María López Pérez"
+  },
+  {
+    "ciudad": "Medellín",
+    "direccion": "Carrera 13 #25-45, Edificio Galaxia, apto 302",
+    "id": "C0003",
+    "telefono": "3004567890",
+    "nombre": "Juan David Ramírez Castro"
+  },
+  {
+    "ciudad": "Armenia",
+    "direccion": "Vereda La Palma, Finca El Paraíso",
+    "id": "C0004",
+    "telefono": "3151234567",
+    "nombre": "Sofia González Villa"
+  },
+  {
+    "ciudad": "Bogotá",
+    "direccion": "Avenida Bolívar #15-89, Centro Comercial El Dorado",
+    "id": "C0005",
+    "telefono": "3219876543",
+    "nombre": "Diego Hernández Moreno"
+  },
+  {
+    "ciudad": "Cali",
+    "direccion": "Urbanización Los Rosales, Manzana 3, Casa 12",
+    "id": "C0006",
+    "telefono": "3187654321",
+    "nombre": "Laura Patiño Salazar"
+  },
+  {
+    "ciudad": "Bogotá",
+    "direccion": "Calle 100 # 15B - 32",
+    "id": "C0007",
+    "telefono": "3112345678",
+    "nombre": "Carlos Alberto Pérez"
+  },
+  {
+    "ciudad": "Medellín",
+    "direccion": "Avenida El Poblado",
+    "id": "C0008",
+    "telefono": "3059876543",
+    "nombre": "María Fernanda Gómez"
+  },
+  {
+    "ciudad": "Cali",
+    "direccion": "Urbanización Ciudad Jardín",
+    "id": "C0009",
+    "telefono": "3124567890",
+    "nombre": "Juan Sebastián Herrera"
+  },
+  {
+    "ciudad": "Barranquilla",
+    "direccion": "Carrera 51",
+    "id": "C0010",
+    "telefono": "3191234567",
+    "nombre": "Laura Valentina Ramírez"
+  },
+  {
+    "ciudad": "Pereira",
+    "direccion": "Avenida 30 de Agosto",
+    "id": "C0011",
+    "telefono": "3139876543",
+    "nombre": "Daniel Felipe González"
+  }
+]

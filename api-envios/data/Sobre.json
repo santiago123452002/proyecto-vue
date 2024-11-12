@@ -1,0 +1,26 @@
+[{
+  "contenido": "Documentos notariales",
+  "peso": 0,
+  "nroGuia": "1BECQX7N",
+  "fragil": false,
+  "remitente": {
+    "ciudad": "Manizales",
+    "direccion": "Mercaldas La Sultana",
+    "id": "0F7SD",
+    "telefono": "3115550002",
+    "nombre": "David Andrés García"
+  },
+  "valorDeclarado": 0,
+  "certificado": true,
+  "destinatario": {
+    "ciudad": "Manizales",
+    "direccion": "Edificio del parque, piso 2, Ucaldas",
+    "id": "C0001",
+    "telefono": "3115551234",
+    "nombre": "Carlos Cuesta Iglesias"
+  },
+  "estados": [{
+    "estado": "RECIBIDO",
+    "fechaHora": "2024-10-13T18:37:45"
+  }]
+}]

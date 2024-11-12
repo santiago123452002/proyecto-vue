@@ -1,85 +1,100 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="app-container">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item" @click="navigateTo('clientes')">Clientes</li>
+        <li class="nav-item" @click="navigateTo('mercancias')">Mercancías</li>
+        <li class="nav-item" @click="navigateTo('acerca')">Acerca</li>
+        <li class="nav-item" @click="navigateTo('contacto')">Contacto</li>
+      </ul>
+    </nav>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div class="content">
+      <ClientesComponent v-if="currentView === 'clientes'" />
+      <MercanciasComponent v-if="currentView === 'mercancias'" />
+      <AcercaComponent v-if="currentView === 'acerca'" />
+      <ContactoComponent v-if="currentView === 'contacto'" />
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
+<script>
+import { ref } from 'vue';
+import ClientesComponent from './components/ClientesComponent.vue';
+import MercanciasComponent from './components/MercanciasComponent.vue';
+import AcercaComponent from './components/AcercaComponent.vue';
+import ContactoComponent from './components/ContactoComponent.vue';
+
+export default {
+  components: {
+    ClientesComponent,
+    MercanciasComponent,
+    AcercaComponent,
+    ContactoComponent,
+  },
+  setup() {
+    const currentView = ref('clientes');
+
+    const navigateTo = (view) => {
+      currentView.value = view;
+    };
+
+    return {
+      currentView,
+      navigateTo,
+    };
+  },
+};
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  z-index: 10;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.nav-item {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.nav-item:hover {
+  background-color: #555;
 }
 
-nav a:first-of-type {
-  border: 0;
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.content > div {
+  display: none;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.content > div.active {
+  display: block;
 }
 </style>

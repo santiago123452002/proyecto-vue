@@ -1,0 +1,62 @@
+[
+  {
+    "cliente": {
+      "ciudad": "Manizales",
+      "direccion": "Edificio del parque, piso 2, Ucaldas",
+      "id": "C0001",
+      "telefono": "3115551234",
+      "nombre": "Carlos Cuesta Iglesias"
+    },
+    "contenido": "250 unidades de panela por 500 gramos",
+    "costo": 139500,
+    "volumen": 3.1,
+    "fechaHoraSalida": "2024-10-15T18:00",
+    "ancho": 1.5,
+    "dias": 9,
+    "largo": 1.75,
+    "id": "1GZJETME",
+    "alto": 1.2,
+    "bodega": "Zona industrial La Enea, Manizales",
+    "fechaHoraIngreso": "2024-10-06T17:35"
+  },
+  {
+    "cliente": {
+      "ciudad": "Manizales",
+      "direccion": "Mercaldas La Sultana",
+      "id": "0F7SD",
+      "telefono": "3115550002",
+      "nombre": "David Andrés García"
+    },
+    "contenido": "500 unidades de arándanos deshidratados x 500 gramos",
+    "costo": 851499.9999999999,
+    "volumen": 13.1,
+    "fechaHoraSalida": "2024-10-20T12:00",
+    "ancho": 2.1,
+    "dias": 13,
+    "largo": 2.5,
+    "id": "6CMRI0YZ",
+    "alto": 2.5,
+    "bodega": "Zona industrial Juanchito, Bogotá",
+    "fechaHoraIngreso": "2024-10-07T12:00"
+  },
+  {
+    "cliente": {
+      "ciudad": "Bogotá",
+      "direccion": "Laboratorio de física cuántica, LFCB",
+      "id": "0A7FQ",
+      "telefono": "3115550001",
+      "nombre": "David Bohm"
+    },
+    "contenido": "Avena en bultos de 12 kilos",
+    "costo": 920000,
+    "volumen": 23,
+    "fechaHoraSalida": "2024-10-12T16:00",
+    "ancho": 3.2,
+    "dias": 8,
+    "largo": 3,
+    "id": "34ZF1J9L",
+    "alto": 2.4,
+    "bodega": "Zona industrial La Enea, Manizales",
+    "fechaHoraIngreso": "2024-10-04T14:35"
+  }
+]
